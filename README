@@ -1,0 +1,21 @@
+K Nearest Neighbour with False Nearest Neighbour
+
+Albert Zaharovits albert.zaharovits@gmail.com
+
+Predictor method for chaotic scalar data series, using the K Nearest Neighbour algorithm
+for regression
+
+False Nearest Neighbour - outputs the minimum embeddind dimensions for which 
+the attractor can be traced
+K Nearest Neighbour - using the output from the Nearest Neighbour computes the weighted
+average of the K closest neighbours in the delay space; 
+
+predictor1 - outputs the next predicted value in the data series
+predictor2 - calls predictor1 succesively for multi-values predictions
+
+sun_spot.txt - test input data, half the series can be the <<<train>>> data and the other
+half could be the reference for the predicted series; the embedding dimension (output 
+of False Nearest Neighbour) should be 4.
+
+mean_square_error - can be used to aproximate the error between the predicted values and the reference
+
